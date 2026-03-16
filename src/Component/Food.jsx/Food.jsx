@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Food.css"
 
-const Food = ({food}) => {
+const Food = ({food ,handlerAddToCart}) => {
 
 
-    console.log(food);
+    // console.log(food);
     
 
     return (
@@ -13,6 +13,7 @@ const Food = ({food}) => {
             <div  className="food-card">
                 <p>{food.strMeal}</p>
                 <img src={food.strMealThumb} alt="" />
+                <button onClick={() => {handlerAddToCart(food.strMeal)}}>Add to Cart</button>
             </div>
         </div>
     );

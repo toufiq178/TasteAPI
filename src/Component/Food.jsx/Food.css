@@ -12,3 +12,16 @@
    border-radius: 8px;
    margin: 10px 0px;
 }
+
+.food-card button {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.food-card button:hover {
+    background-color: red;
+}
